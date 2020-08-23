@@ -1,5 +1,20 @@
 <p>{{quote.author}}</p>
 <p>posted {{quote.completeDate|dateCount}} days ago </p>
-<button (click)= 'quoteDelete(true)'><i class="fa fa-trash"></i></button>    
+<button (click)= 'quoteDelete(true)'><i class="fa fa-trash"></i></button>  
+<p>{{quote.poster}}</p>
+<p>{{upvotesNumber}}</p>
+<button (click) = 'upvote()'><i class="fa fa-thumbs-up"></i></button>
+
+
+
+<!-- <div class="col-3 action upvote" (click)="quote.upvotes = quote.upvotes + 1">
+    <i class="fa fa-thumbs-up"></i>
+</div> -->
+
+
+
+<!-- <i class="fa fa-thumbs-up"></i>
+
+<i class="fa fa-thumbs-down"></i> -->
 
 
