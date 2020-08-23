@@ -1,5 +1,13 @@
 <div *ngFor='let quote of quotes;let i = index'>
-  <li>{{quote.text}}</li>
-  <app-quote-detail [quote]='quote'></app-quote-detail>
+  <li>{{quote.text}} due on {{quote.completeDate|date|uppercase}}</li>  
+  <app-quote-detail [quote]='quote'(isComplete) = deleteQuote($event,i) ></app-quote-detail> 
 </div>
+
+
+<!-- (isComplete) = deleteQuote($event,i) -->
+
+
+<!-- <app-goal-detail *ngIf='goal.showDescription' [goal]='goal' (isComplete) = 'deleteGoal($event,i)'></app-goal-detail> -->
+
+
 
