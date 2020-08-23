@@ -1,3 +1,5 @@
-<p>
-    {{quote.author}}
-</p>
+<p>{{quote.author}}</p>
+<p>posted {{quote.completeDate|dateCount}} days ago </p>
+<button (click)= 'quoteDelete(true)'><i class="fa fa-trash"></i></button>    
+
+
