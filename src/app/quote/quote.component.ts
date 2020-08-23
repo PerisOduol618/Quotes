@@ -8,9 +8,9 @@ import { Quote } from '../quote';
 })
 export class QuoteComponent implements OnInit {
   quotes: Quote[] = [
-    new Quote('Walking on water and developing software from a specification are easy if both are frozen.', 'Marvin Minsky',new Date(2020,3,14)),
-    new Quote('You can only become truly accomplished at something you love.', 'Maya Angelou',new Date(2020,6,9)),
-    new Quote('A conscious human is driven by their conscience, not popular opinion.', 'Paul Graham',new Date(2022,1,12)),
+    new Quote('Walking on water and developing software from a specification are easy if both are frozen.', 'Marvin Minsky',new Date(2020,3,14),'Jane'),
+    new Quote('You can only become truly accomplished at something you love.', 'Maya Angelou',new Date(2020,6,9), 'Alice'),
+    new Quote('A conscious human is driven by their conscience, not popular opinion.', 'Paul Graham',new Date(2022,1,12), 'Shan'),
 
   ];
   deleteQuote(isComplete, index){
