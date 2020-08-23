@@ -3,7 +3,9 @@
 <button (click)= 'quoteDelete(true)'><i class="fa fa-trash"></i></button>  
 <p>{{quote.poster}}</p>
 <p>{{upvotesNumber}}</p>
-<button (click) = 'upvote()'><i class="fa fa-thumbs-up"></i></button>
+<span (click) = 'upvote()'><i class="fa fa-thumbs-up"></i></span>
+<p>{{downvoteNumber}}</p>
+<button (click) = 'downvote()'><i class="fa fa-thumbs-down"></i></button>
 
 
 
