@@ -1,22 +1,21 @@
-<p>{{quote.author}}</p>
-<p>posted {{quote.completeDate|dateCount}} days ago </p>
-<button (click)= 'quoteDelete(true)'><i class="fa fa-trash"></i></button>  
-<p>{{quote.poster}}</p>
-<p>{{upvotesNumber}}</p>
-<span (click) = 'upvote()'><i class="fa fa-thumbs-up"></i></span>
-<p>{{downvoteNumber}}</p>
-<button (click) = 'downvote()'><i class="fa fa-thumbs-down"></i></button>
-
-
-
-<!-- <div class="col-3 action upvote" (click)="quote.upvotes = quote.upvotes + 1">
-    <i class="fa fa-thumbs-up"></i>
-</div> -->
-
-
-
-<!-- <i class="fa fa-thumbs-up"></i>
-
-<i class="fa fa-thumbs-down"></i> -->
-
-
+<div class="container card">
+    <div>
+        <p>{{quote.author}}</p>
+        <p>posted {{quote.completeDate|dateCount}} days ago </p>
+        <span (click)='quoteDelete(true)'><i class="fa fa-trash"></i></span>
+        <p>{{quote.poster}}</p>
+        <div class="row">
+            <div class="col-md-4">
+                <p>{{upvotesNumber}}</p>
+                <span (click)='upvote()'><i class="fa fa-thumbs-up"></i></span>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-md-4">
+                <p>{{downvoteNumber}}</p>
+                <span (click)='downvote()'><i class="fa fa-thumbs-down"></i></span>
+            </div>
+        </div>
+    </div>
+</div>
