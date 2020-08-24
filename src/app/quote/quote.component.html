@@ -1,8 +1,10 @@
-<div class="container-fluid bg-s">
+<div class="container-fluid " style="background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);">
+  <h1 class="text-center head">QUOTES</h1>
+  <hr>
   <div class="row">
     <div class="col-md-6">
       <div *ngFor='let quote of quotes;let i = index' class="">
-        <p>{{quote.text}} on {{quote.completeDate|date|uppercase}}</p>
+        <p class="para"><i class="fas fa-quote-left"> </i> {{quote.text}} <br> posted on {{quote.completeDate|date|uppercase}}</p>
         <app-quote-detail [quote]='quote' (isComplete)=deleteQuote($event,i)></app-quote-detail>
       </div>
     </div>

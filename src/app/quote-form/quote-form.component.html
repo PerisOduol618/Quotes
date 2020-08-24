@@ -1,4 +1,5 @@
-<div class="container-fluid card">
+<br>
+<div class="container-fluid text-center card ">
     <h2 class="text-center">Add a Quote</h2>
     <hr>
     <form (ngSubmit)='submitQuote()' #quoteForm='ngForm'>
@@ -29,23 +30,11 @@
             <label for="poster">Your name</label>
             <input type="text" required class="form-control" id="poster" [(ngModel)]="newQuote.poster" poster="poster"
                 #poster='ngModel'>
-            <div [hidden]="poster.valid  || poster.pristine" class="alert alert-danger">
+            <!-- <div [hidden]="poster.valid  || poster.pristine" class="alert alert-danger">
                 <p>Add your name</p>
-            </div>
-        </div>
-
-        <div>
-            <!-- <div class="form-group">
-                <label for="complete">Date</label>
-                <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate"
-                    #completeDate="ngModel" required>
-                <div [hidden]="completeDate.valid || completeDate.pristine" class="alert alert-danger">
-                    <p>Date is required</p>
-                </div>
-
             </div> -->
         </div>
-        <button type="submit" class="btn btn-success text-center">Add a quote</button>
+        <button type="submit" class="btn btn-info text-center">Add a quote</button>
         <br><br>
 
     </form>
