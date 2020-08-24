@@ -16,7 +16,7 @@
 
         <div class="form-group">
             <label for="author">Author</label>
-            <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" author="author"
+            <input type="text" required class="form-control" id="author" [(ngModel)]="newQuote.author" name="author"
                 #author='ngModel'>
 
             <div [hidden]="author.valid || author.pristine" class="alert alert-danger">
@@ -28,11 +28,11 @@
 
         <div class="form-group">
             <label for="poster">Your name</label>
-            <input type="text" required class="form-control" id="poster" [(ngModel)]="newQuote.poster" poster="poster"
+            <input type="text" required class="form-control" id="poster" [(ngModel)]="newQuote.poster" name="poster"
                 #poster='ngModel'>
-            <!-- <div [hidden]="poster.valid  || poster.pristine" class="alert alert-danger">
+            <div [hidden]="poster.valid  || poster.pristine" class="alert alert-danger">
                 <p>Add your name</p>
-            </div> -->
+            </div>
         </div>
         <button type="submit" class="btn btn-info text-center">Add a quote</button>
         <br><br>

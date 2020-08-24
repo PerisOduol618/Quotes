@@ -1,7 +1,4 @@
 
-    // poster:string;
-    // upvotes:number;
-    // downvotes:number;
 
 
 export class Quote {
