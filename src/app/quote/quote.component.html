@@ -2,12 +2,12 @@
   <div class="row">
     <div class="col-md-6">
       <div *ngFor='let quote of quotes;let i = index' class="card">
-        <p>{{quote.text}} due on {{quote.completeDate|date|uppercase}}</p>
+        <p>{{quote.text}} on {{quote.completeDate|date|uppercase}}</p>
         <app-quote-detail [quote]='quote' (isComplete)=deleteQuote($event,i)></app-quote-detail>
       </div>
     </div>
-  </div>
-  <div class="col-md-6">
-    <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    <div class="col-md-6">
+      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+    </div>
   </div>
 </div>

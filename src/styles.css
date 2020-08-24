@@ -1,1 +1,15 @@
-@import "~bootstrap/dist/css/bootstrap.css"
+@import "~bootstrap/dist/css/bootstrap.css";
+h1{
+    font-size: 60px;
+    font-style: italic;
+}
+.like,.unlike{
+    color: blue;
+}
+
+.trash{
+    color:red;
+}
+.body{
+    color: black;
+}
